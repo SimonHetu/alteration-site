@@ -95,6 +95,58 @@ p {
   margin: 0;
 }
 
+section {
+  padding: 40px 24px;
+}
+
+.portfolio-section {
+  text-align: left;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.portfolio-card {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--bg);
+}
+
+.portfolio-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.portfolio-card h3,
+.portfolio-card p {
+  padding-inline: 16px;
+}
+
+.portfolio-card h3 {
+  margin: 16px 0 8px;
+  color: var(--text-h);
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.portfolio-role {
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.portfolio-description {
+  margin-top: 8px;
+  padding-bottom: 16px;
+}
+
 code,
 .counter {
   font-family: var(--mono);
