@@ -1,8 +1,12 @@
 function Footer() {
   return (
-    <section>
-      <h2>Services</h2>
-    </section>
+    <footer className="site-footer">
+      <div className="container">
+        <p>ALTERATION</p>
+        <p>Creative Technology</p>
+        <p>© 2026 Simon Hétu</p>
+      </div>
+    </footer>
   );
 }
 

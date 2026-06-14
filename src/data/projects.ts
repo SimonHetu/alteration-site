@@ -2,16 +2,16 @@ export const projects = [
   {
     title: "Empire Media",
     category: "Web Development",
-    description: "Placeholder: describe the platform goal, core features, technologies used, and your contribution to the final web experience."
+    description: "Streaming platform developed within a collaborative team environment. Contributions include frontend development, feature implementation, code analysis and Git-based workflows."
   },
   {
     title: "MD Clinique",
-    category: "WordPress",
-    description: "Placeholder: describe the website audit, maintenance work, security improvements, and client-facing outcome."
+    category: "WordPress Development",
+    description: "WordPress project involving local deployment, content management, technical analysis and investigation of production issues. Worked with WordPress, PHP, MySQL and ACF Pro."
   },
   {
-    title: "Bok Choy Engine",
-    category: "C++",
-    description: "Placeholder: describe the engine goal, rendering or gameplay systems built, technical stack, and current project status."
+    title: "Crime Map",
+    category: "Application Development",
+    description: "Interactive mapping application focused on data visualization and location-based information. Designed to explore user interaction, mapping systems and application architecture."
   }
 ];

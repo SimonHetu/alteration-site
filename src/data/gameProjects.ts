@@ -9,7 +9,7 @@ export const gameProjects: PortfolioProject[] = [
     images: [
       new URL("../assets/images/games/ancient-seer.jpg", import.meta.url).href
     ],
-    description: "Placeholder: describe the concept, modeling, texturing, lighting, rendering, and final presentation work completed for this image."
+    description: "Creature concept exploring ancient knowledge, forgotten civilizations and bio-organic evolution. Developed as part of a larger science fiction worldbuilding exercise."
   },
   {
     id: "deep-sea-demon",
@@ -19,7 +19,7 @@ export const gameProjects: PortfolioProject[] = [
     images: [
       new URL("../assets/images/games/deep-sea-demon.jpg", import.meta.url).href
     ],
-    description: "Placeholder: summarize the creature or character design work, the mood of the scene, and the production steps you handled."
+    description: "Deep sea creature exploration inspired by extreme ocean environments and alien biology. Focused on atmosphere, silhouette and visual storytelling."
   },
   {
     id: "dragon",
@@ -29,7 +29,7 @@ export const gameProjects: PortfolioProject[] = [
     images: [
       new URL("../assets/images/games/dragon.jpg", import.meta.url).href
     ],
-    description: "Placeholder: describe the full image creation process, including design, sculpting or modeling, materials, lighting, and final render."
+    description: "Fantasy creature concept emphasizing scale, power and cinematic presentation. Created as a study in creature design and environmental interaction."
   },
   {
     id: "ectothermic-marauder",
@@ -39,7 +39,7 @@ export const gameProjects: PortfolioProject[] = [
     images: [
       new URL("../assets/images/games/ectothermic-marauder.jpg", import.meta.url).href
     ],
-    description: "Placeholder: explain the character, asset, or environment work completed, plus the creative goal behind the final image."
+    description: "Predatory creature concept designed around adaptation, camouflage and survival within a hostile ecosystem. Focused on mood, behavior and environmental integration."
   },
   {
     id: "frost-witch-maze",
@@ -49,7 +49,7 @@ export const gameProjects: PortfolioProject[] = [
     images: [
       new URL("../assets/images/games/frost-witch-maze.jpg", import.meta.url).href
     ],
-    description: "Placeholder: describe the scene design, environment creation, mood, lighting, and final polish completed for this artwork."
+    description: "Fantasy environment concept exploring magical architecture, isolation and mystery. Designed to support narrative worldbuilding and environmental storytelling."
   },
   {
     id: "jungle-cage",
@@ -59,7 +59,7 @@ export const gameProjects: PortfolioProject[] = [
     images: [
       new URL("../assets/images/games/jungle-cage.jpg", import.meta.url).href
     ],
-    description: "Placeholder: summarize the environment or set piece work, including layout, assets, textures, lighting, and final composition."
+    description: "Environment concept depicting a reclaimed structure overtaken by nature. Focused on the relationship between artificial construction and organic growth."
   },
   {
     id: "mushrooms",
@@ -69,7 +69,7 @@ export const gameProjects: PortfolioProject[] = [
     images: [
       new URL("../assets/images/games/mushrooms.jpg", import.meta.url).href
     ],
-    description: "Placeholder: describe the asset creation, material work, lighting setup, and visual direction behind this image."
+    description: "Environmental exploration inspired by alien ecosystems and oversized biological forms. Created to develop atmosphere, scale and ecosystem design."
   },
   {
     id: "space-rings-dmp",
@@ -79,7 +79,7 @@ export const gameProjects: PortfolioProject[] = [
     images: [
       new URL("../assets/images/games/space-rings-dmp.jpg", import.meta.url).href
     ],
-    description: "Placeholder: explain the digital matte painting or environment work, including composition, atmosphere, and final integration."
+    description: "Science fiction environment concept centered on large-scale orbital structures and deep space exploration. Focused on cinematic composition and environmental storytelling."
   },
   {
     id: "space-rings-final",
@@ -89,7 +89,7 @@ export const gameProjects: PortfolioProject[] = [
     images: [
       new URL("../assets/images/games/space-rings-final.jpg", import.meta.url).href
     ],
-    description: "Placeholder: describe the final environment image, including design choices, rendering, lighting, and finishing work."
+    description: "Final environment illustration expanding on the orbital habitat concept. Developed to showcase worldbuilding, scale and futuristic design language."
   },
   {
     id: "sunny-sherbet",
@@ -99,7 +99,7 @@ export const gameProjects: PortfolioProject[] = [
     images: [
       new URL("../assets/images/games/sunny-sherbet.jpg", import.meta.url).href
     ],
-    description: "Placeholder: summarize the stylized visual development, asset work, color direction, and final render process."
+    description: "Color and mood exploration focused on creating a vibrant science fiction environment. Designed as an exercise in atmosphere, lighting and visual appeal."
   },
   {
     id: "swamp-monster-battle",
@@ -109,7 +109,7 @@ export const gameProjects: PortfolioProject[] = [
     images: [
       new URL("../assets/images/games/swamp-monster-battle.jpg", import.meta.url).href
     ],
-    description: "Placeholder: describe the action scene, creature or environment work, composition, lighting, and final image polish."
+    description: "Action-oriented creature illustration depicting a confrontation within a hostile environment. Focused on storytelling, motion and cinematic composition."
   },
   {
     id: "the-assassin",
@@ -119,7 +119,7 @@ export const gameProjects: PortfolioProject[] = [
     images: [
       new URL("../assets/images/games/the-assassin.jpg", import.meta.url).href
     ],
-    description: "Placeholder: explain the character-focused artwork, including design, posing, materials, lighting, and presentation."
+    description: "Character concept exploring stealth, mystery and visual identity within a dark fantasy setting. Developed with an emphasis on silhouette and narrative potential."
   },
   {
     id: "yakuza-street-racing",
@@ -129,6 +129,6 @@ export const gameProjects: PortfolioProject[] = [
     images: [
       new URL("../assets/images/games/yakuza_street-racing.jpg", import.meta.url).href
     ],
-    description: "Placeholder: summarize the scene creation, vehicle or street environment work, lighting, atmosphere, and final render."
+    description: "Urban concept piece inspired by underground racing culture and futuristic city environments. Focused on atmosphere, speed and environmental storytelling."
   }
 ];
