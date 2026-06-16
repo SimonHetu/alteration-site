@@ -1,14 +1,103 @@
+import { useEffect, useRef, useState } from "react";
+import alterationLogo from "../assets/images/logo/logo-alteration.png";
+
+const navItems = [
+  { href: "#home", label: "Home" },
+  { href: "#services", label: "Services" },
+  { href: "#portfolio", label: "Portfolio" },
+  { href: "#about", label: "About" },
+  { href: "#contact", label: "Contact" },
+];
+
+const sectionIds = navItems.map((item) => item.href.replace("#", ""));
+
 function Header() {
+  const [activeSection, setActiveSection] = useState("home");
+  const activeSectionRef = useRef("home");
+
+  useEffect(() => {
+    let sectionOffsets: Array<{ id: string; top: number }> = [];
+    let frameRequest: number | null = null;
+
+    const refreshSectionOffsets = () => {
+      sectionOffsets = sectionIds
+        .map((id) => {
+          const section = document.getElementById(id);
+          return section ? { id, top: section.offsetTop } : null;
+        })
+        .filter((section): section is { id: string; top: number } => section !== null);
+    };
+
+    const updateActiveSection = () => {
+      const scrollPosition = window.scrollY + 120;
+      const currentSection =
+        sectionOffsets.findLast((section) => section.top <= scrollPosition)?.id ?? "home";
+
+      if (currentSection !== activeSectionRef.current) {
+        activeSectionRef.current = currentSection;
+        setActiveSection(currentSection);
+      }
+    };
+
+    const requestActiveSectionUpdate = () => {
+      if (frameRequest !== null) {
+        return;
+      }
+
+      frameRequest = window.requestAnimationFrame(() => {
+        frameRequest = null;
+        updateActiveSection();
+      });
+    };
+
+    const handleResize = () => {
+      refreshSectionOffsets();
+      requestActiveSectionUpdate();
+    };
+
+    refreshSectionOffsets();
+    requestActiveSectionUpdate();
+    window.addEventListener("scroll", requestActiveSectionUpdate, { passive: true });
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      if (frameRequest !== null) {
+        window.cancelAnimationFrame(frameRequest);
+      }
+
+      window.removeEventListener("scroll", requestActiveSectionUpdate);
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <header className="site-header">
-      <a className="site-logo" href="#home">ALTERATION</a>
+      <a className="site-logo" href="#home" aria-label="Alteration home">
+        <img
+          src={alterationLogo}
+          alt=""
+          width="4096"
+          height="2304"
+          decoding="async"
+        />
+        <span>ALTERATION</span>
+      </a>
 
       <nav className="site-nav" aria-label="Main navigation">
-        <a href="#home">Home</a>
-        <a href="#services">Services</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+        {navItems.map((item) => {
+          const sectionId = item.href.replace("#", "");
+
+          return (
+            <a
+              aria-current={activeSection === sectionId ? "page" : undefined}
+              className={activeSection === sectionId ? "is-active" : undefined}
+              href={item.href}
+              key={item.href}
+            >
+              {item.label}
+            </a>
+          );
+        })}
       </nav>
     </header>
   );
