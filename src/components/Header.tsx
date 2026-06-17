@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import alterationLogo from "../assets/images/logo/logo-alteration.png";
+import alterationLogo from "../assets/images/logo/logo-alteration-small.png";
 
 const navItems = [
   { href: "#home", label: "Home" },

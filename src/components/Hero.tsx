@@ -1,6 +1,6 @@
-import alterationLogo from "../assets/images/logo/logo-alteration.png";
+import alterationLogo from "../assets/images/logo/logo-alteration-small.png";
 import duneImage from "../assets/images/film/dune/dune-arrakis-01.jpg";
-import frostWitchMazeImage from "../assets/images/games/frost-witch-maze.jpg";
+import dragon from "../assets/images/games/dragon.jpg";
 import yakuzaImage from "../assets/images/games/yakuza_street-racing.jpg";
 
 function Hero() {
@@ -29,7 +29,7 @@ function Hero() {
 
           <div className="hero-image-card hero-image-card-primary">
             <img
-              src={frostWitchMazeImage}
+              src={dragon}
               alt="Atmospheric fantasy game environment"
               width="6000"
               height="3000"
