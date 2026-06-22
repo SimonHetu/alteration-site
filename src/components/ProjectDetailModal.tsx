@@ -6,6 +6,10 @@ export type ProjectDetail = {
   role?: string;
   tools?: string[] | string;
   year?: string;
+  website?: {
+    label?: string;
+    url: string;
+  };
   description: string;
   image?: string;
   images?: string[];
@@ -189,6 +193,16 @@ function ProjectDetailModal({ project, onClose }: ProjectDetailModalProps) {
             {label && <p className="portfolio-role">{label}</p>}
             <h2>{project.title}</h2>
             <p>{project.description}</p>
+            {project.website && (
+              <a
+                className="project-website-link"
+                href={project.website.url}
+                rel="noreferrer"
+                target="_blank"
+              >
+                {project.website.label ?? project.website.url}
+              </a>
+            )}
           </div>
 
           <dl className="project-metadata">

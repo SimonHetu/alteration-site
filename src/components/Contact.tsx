@@ -5,7 +5,7 @@ function Contact() {
         <h2>Contact</h2>
         <div className="section-copy">
           <p>
-            Interested in collaborating, discussing a project or learning more about my work?
+            Interested in collaborating, discussing a project or learning more about our work?
           </p>
           <p>Get in touch.</p>
         </div>

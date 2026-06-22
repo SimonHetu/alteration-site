@@ -238,7 +238,8 @@ img {
 }
 
 .site-logo:focus-visible,
-.site-nav a:focus-visible {
+.site-nav a:focus-visible,
+.project-website-link:focus-visible {
   outline: 2px solid var(--nav-highlight);
   outline-offset: 4px;
 }
@@ -703,6 +704,7 @@ button.content-card {
 .portfolio-card:focus-visible,
 .contact-card:focus-visible,
 .service-card:focus-visible,
+.development-card-open:focus-visible,
 .modal-close:focus-visible,
 .modal-image-button:focus-visible,
 .zoom-close:focus-visible,
@@ -805,6 +807,36 @@ button.content-card:hover,
   margin-top: 16px;
 }
 
+.development-card-open {
+  display: flex;
+  width: 100%;
+  flex: 1;
+  flex-direction: column;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.portfolio-website-label {
+  margin: 0 22px 22px;
+  border-bottom: 1px solid rgba(34, 211, 238, 0.32);
+  color: var(--highlight);
+  font-size: 13px;
+  font-weight: 700;
+  width: fit-content;
+  transition:
+    border-color 180ms ease,
+    color 180ms ease;
+}
+
+.portfolio-website-label:hover {
+  border-color: var(--highlight);
+  color: var(--text-strong);
+}
+
 .contact-card {
   min-height: 190px;
 }
@@ -883,6 +915,24 @@ button.content-card:hover,
   color: var(--text);
   font-size: 17px;
   line-height: 1.75;
+}
+
+.project-website-link {
+  display: inline-flex;
+  width: fit-content;
+  margin-top: 18px;
+  border-bottom: 1px solid rgba(34, 211, 238, 0.36);
+  color: var(--highlight);
+  font-size: 14px;
+  font-weight: 700;
+  transition:
+    border-color 180ms ease,
+    color 180ms ease;
+}
+
+.project-website-link:hover {
+  border-color: var(--highlight);
+  color: var(--text-strong);
 }
 
 .project-metadata {
