@@ -21,9 +21,9 @@ function App() {
         <Hero />
         <Services />
         <div id="portfolio">
+          <Projects onProjectSelect={setSelectedProject} />
           <FilmProjects onProjectSelect={setSelectedProject} />
           <GameProjects onProjectSelect={setSelectedProject} />
-          <Projects onProjectSelect={setSelectedProject} />
         </div>
         <About />
         <Contact />
