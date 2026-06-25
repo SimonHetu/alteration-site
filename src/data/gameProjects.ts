@@ -9,7 +9,7 @@ export const gameProjects: PortfolioProject[] = [
     images: [
       new URL("../assets/images/games/ancient-seer.jpg", import.meta.url).href
     ],
-    description: "Creature concept exploring ancient knowledge, forgotten civilizations and bio-organic evolution. Developed as part of a larger science fiction worldbuilding exercise."
+    description: "Creature concept exploring ancient knowledge, forgotten civilizations and bio-organic evolution. Developed as part of a larger science fiction worldbuilding project."
   },
   {
     id: "deep-sea-demon",

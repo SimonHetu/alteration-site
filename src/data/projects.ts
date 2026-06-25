@@ -19,20 +19,6 @@ export const projects = [
     description: "Streaming platform developed within a collaborative team environment. Contributions include frontend development, feature implementation, code analysis and Git-based workflows."
   },
   {
-    title: "Crime Vision",
-    category: "Application Development",
-    role: "Full-stack Development",
-    tools: ["Interactive maps", "Data visualization", "Geospatial data"],
-    website: {
-      label: "crimevision-frontend.vercel.app",
-      url: "https://crimevision-frontend.vercel.app/",
-    },
-    images: [
-      new URL("../assets/images/development/crime-vision/crime-vision-01.jpg", import.meta.url).href,
-    ],
-    description: "Interactive platform for visualizing criminal incidents across Montreal on a map. Crime Vision combines geospatial data, location-based exploration and clear data visualization to make incident patterns easier to understand."
-  },
-  {
     title: "Kernel Coffee",
     category: "E-commerce Development",
     role: "Web Development",
@@ -50,5 +36,19 @@ export const projects = [
       new URL("../assets/images/development/kernel-coffee/kernel-coffee-06.jpg", import.meta.url).href,
     ],
     description: "Coffee e-commerce platform built around programming-language-inspired blends such as Go Brew and Ruby Roast. The experience combines a themed product catalog, responsive shopping interface and playful developer-focused branding."
+  },
+  {
+    title: "Crime Vision",
+    category: "Application Development",
+    role: "Full-stack Development",
+    tools: ["Interactive maps", "Data visualization", "Geospatial data"],
+    website: {
+      label: "crimevision-frontend.vercel.app",
+      url: "https://crimevision-frontend.vercel.app/",
+    },
+    images: [
+      new URL("../assets/images/development/crime-vision/crime-vision-01.jpg", import.meta.url).href,
+    ],
+    description: "Interactive platform for visualizing criminal incidents across Montreal on a map. Crime Vision combines geospatial data, location-based exploration and clear data visualization to make incident patterns easier to understand."
   }
 ];

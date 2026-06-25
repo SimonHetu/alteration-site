@@ -1,7 +1,7 @@
-import alterationLogo from "../assets/images/logo/logo-alteration-small.png";
+import alterationLogo from "../assets/images/logo/Logo_Square_01_512.png";
+import crimeVisionImage from "../assets/images/development/crime-vision/crime-vision-01.jpg";
 import duneImage from "../assets/images/film/dune/dune-arrakis-01.jpg";
 import dragon from "../assets/images/games/dragon.jpg";
-import yakuzaImage from "../assets/images/games/yakuza_street-racing.jpg";
 
 function Hero() {
   return (
@@ -21,8 +21,8 @@ function Hero() {
             <img
               src={alterationLogo}
               alt="Alteration"
-              width="4096"
-              height="2304"
+              width="512"
+              height="512"
               decoding="async"
             />
           </div>
@@ -55,10 +55,10 @@ function Hero() {
 
           <div className="hero-image-card hero-image-card-tertiary">
             <img
-              src={yakuzaImage}
-              alt="Interactive urban game concept"
-              width="3204"
-              height="1804"
+              src={crimeVisionImage}
+              alt="Interactive data visualization platform"
+              width="2048"
+              height="1229"
               decoding="async"
               loading="lazy"
               sizes="(max-width: 720px) 52vw, 20vw"

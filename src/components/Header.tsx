@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import alterationLogo from "../assets/images/logo/logo-alteration-small.png";
+import alterationLogo from "../assets/images/logo/Logo_Square_01_256.png";
 
 const navItems = [
   { href: "#home", label: "Home" },
@@ -76,8 +76,8 @@ function Header() {
         <img
           src={alterationLogo}
           alt=""
-          width="4096"
-          height="2304"
+          width="256"
+          height="256"
           decoding="async"
         />
         <span>ALTERATION</span>
