@@ -6,6 +6,7 @@ export const gameProjects: PortfolioProject[] = [
     title: "Ancient Seer",
     category: "Game Art",
     role: "Generaliste",
+    thumbnail: new URL("../assets/images/games/ancient-seer-50.jpg", import.meta.url).href,
     images: [
       new URL("../assets/images/games/ancient-seer.jpg", import.meta.url).href
     ],
@@ -26,6 +27,7 @@ export const gameProjects: PortfolioProject[] = [
     title: "Dragon",
     category: "Game Art",
     role: "Generaliste",
+    thumbnail: new URL("../assets/images/games/dragon-50.jpg", import.meta.url).href,
     images: [
       new URL("../assets/images/games/dragon.jpg", import.meta.url).href
     ],
@@ -36,6 +38,7 @@ export const gameProjects: PortfolioProject[] = [
     title: "Ectothermic Marauder",
     category: "Game Art",
     role: "Generaliste",
+    thumbnail: new URL("../assets/images/games/ectothermic-marauder-50.jpg", import.meta.url).href,
     images: [
       new URL("../assets/images/games/ectothermic-marauder.jpg", import.meta.url).href
     ],
@@ -46,6 +49,7 @@ export const gameProjects: PortfolioProject[] = [
     title: "Frost Witch Maze",
     category: "Game Art",
     role: "Generaliste",
+    thumbnail: new URL("../assets/images/games/frost-witch-maze-50.jpg", import.meta.url).href,
     images: [
       new URL("../assets/images/games/frost-witch-maze.jpg", import.meta.url).href
     ],
@@ -56,6 +60,7 @@ export const gameProjects: PortfolioProject[] = [
     title: "Jungle Cage",
     category: "Game Art",
     role: "Generaliste",
+    thumbnail: new URL("../assets/images/games/jungle-cage-50.jpg", import.meta.url).href,
     images: [
       new URL("../assets/images/games/jungle-cage.jpg", import.meta.url).href
     ],
@@ -66,6 +71,7 @@ export const gameProjects: PortfolioProject[] = [
     title: "Mushrooms",
     category: "Game Art",
     role: "Generaliste",
+    thumbnail: new URL("../assets/images/games/mushrooms-50.jpg", import.meta.url).href,
     images: [
       new URL("../assets/images/games/mushrooms.jpg", import.meta.url).href
     ],
@@ -76,6 +82,7 @@ export const gameProjects: PortfolioProject[] = [
     title: "Space Rings DMP",
     category: "Game Art",
     role: "Generaliste",
+    thumbnail: new URL("../assets/images/games/space-rings-dmp-50.jpg", import.meta.url).href,
     images: [
       new URL("../assets/images/games/space-rings-dmp.jpg", import.meta.url).href
     ],
@@ -96,6 +103,7 @@ export const gameProjects: PortfolioProject[] = [
     title: "Sunny Sherbet",
     category: "Game Art",
     role: "Generaliste",
+    thumbnail: new URL("../assets/images/games/sunny-sherbet-50.jpg", import.meta.url).href,
     images: [
       new URL("../assets/images/games/sunny-sherbet.jpg", import.meta.url).href
     ],
@@ -106,6 +114,7 @@ export const gameProjects: PortfolioProject[] = [
     title: "Swamp Monster Battle",
     category: "Game Art",
     role: "Generaliste",
+    thumbnail: new URL("../assets/images/games/swamp-monster-battle-50.jpg", import.meta.url).href,
     images: [
       new URL("../assets/images/games/swamp-monster-battle.jpg", import.meta.url).href
     ],
@@ -116,6 +125,7 @@ export const gameProjects: PortfolioProject[] = [
     title: "The Assassin",
     category: "Game Art",
     role: "Generaliste",
+    thumbnail: new URL("../assets/images/games/the-assassin-50.jpg", import.meta.url).href,
     images: [
       new URL("../assets/images/games/the-assassin.jpg", import.meta.url).href
     ],
@@ -126,6 +136,7 @@ export const gameProjects: PortfolioProject[] = [
     title: "Yakuza Street Racing",
     category: "Game Art",
     role: "Generaliste",
+    thumbnail: new URL("../assets/images/games/yakuza_street-racing-50.jpg", import.meta.url).href,
     images: [
       new URL("../assets/images/games/yakuza_street-racing.jpg", import.meta.url).href
     ],

@@ -13,7 +13,7 @@ function Projects({ onProjectSelect }: ProjectsProps) {
 
         <div className="content-grid development-grid">
           {projects.map((project) => {
-            const coverImage = project.images?.[0];
+            const coverImage = project.thumbnail ?? project.images?.[0];
 
             if (coverImage) {
               return (

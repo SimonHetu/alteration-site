@@ -12,21 +12,30 @@ function GameProjects({ onProjectSelect }: GameProjectsProps) {
         <h2>Game Projects</h2>
 
         <div className="portfolio-grid">
-          {gameProjects.map((project) => (
-            <button
-              className="portfolio-card"
-              key={project.id}
-              type="button"
-              onClick={() => onProjectSelect(project)}
-            >
-              <img src={project.images[0]} alt={project.title} />
-              <div className="portfolio-card-content">
-                <h3>{project.title}</h3>
-                {project.role && <p className="portfolio-role">{project.role}</p>}
-                <p className="portfolio-description">{project.description}</p>
-              </div>
-            </button>
-          ))}
+          {gameProjects.map((project) => {
+            const coverImage = project.thumbnail ?? project.images[0];
+
+            return (
+              <button
+                className="portfolio-card"
+                key={project.id}
+                type="button"
+                onClick={() => onProjectSelect(project)}
+              >
+                <img
+                  src={coverImage}
+                  alt={project.title}
+                  decoding="async"
+                  loading="lazy"
+                />
+                <div className="portfolio-card-content">
+                  <h3>{project.title}</h3>
+                  {project.role && <p className="portfolio-role">{project.role}</p>}
+                  <p className="portfolio-description">{project.description}</p>
+                </div>
+              </button>
+            );
+          })}
         </div>
       </div>
     </section>

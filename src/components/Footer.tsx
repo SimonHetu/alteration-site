@@ -4,7 +4,7 @@ function Footer() {
       <div className="container">
         <p>ALTERATION</p>
         <p>Creative Technology</p>
-        <p>© 2026 Simon Hétu</p>
+        <p>© 2026 Alteration</p>
       </div>
     </footer>
   );

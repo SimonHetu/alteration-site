@@ -11,6 +11,7 @@ export type ProjectDetail = {
     url: string;
   };
   description: string;
+  thumbnail?: string;
   image?: string;
   images?: string[];
 };

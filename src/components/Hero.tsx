@@ -1,7 +1,7 @@
 import alterationLogo from "../assets/images/logo/Logo_Square_01_512.png";
-import crimeVisionImage from "../assets/images/development/crime-vision/crime-vision-01.jpg";
+import crimeVisionImage from "../assets/images/development/crime-vision/crime-vision-01-50.jpg";
 import duneImage from "../assets/images/film/dune/dune-arrakis-01.jpg";
-import dragon from "../assets/images/games/dragon.jpg";
+import dragon from "../assets/images/games/dragon-50.jpg";
 
 const techTags = [
   { icon: "code", label: "Software" },
@@ -124,8 +124,8 @@ function Hero() {
             <img
               src={dragon}
               alt="Atmospheric fantasy game environment"
-              width="6000"
-              height="3000"
+              width="3204"
+              height="1804"
               decoding="async"
               fetchPriority="high"
               sizes="(max-width: 720px) 82vw, 32vw"
@@ -162,8 +162,8 @@ function Hero() {
             <img
               src={crimeVisionImage}
               alt="Interactive data visualization platform"
-              width="2048"
-              height="1229"
+              width="1024"
+              height="615"
               decoding="async"
               loading="lazy"
               sizes="(max-width: 720px) 52vw, 20vw"

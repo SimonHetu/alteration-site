@@ -3,6 +3,7 @@ export type PortfolioProject = {
   title: string;
   category: string;
   role?: string;
+  thumbnail?: string;
   images: string[];
   description: string;
 };
@@ -13,6 +14,7 @@ export const filmProjects: PortfolioProject[] = [
     title: "Ad Astra",
     category: "Film",
     role: "Generaliste",
+    thumbnail: new URL("../assets/images/film/ad-astra/ad-astra-01-50.jpg", import.meta.url).href,
     images: [
       new URL("../assets/images/film/ad-astra/ad-astra-01.jpg", import.meta.url).href
     ],
@@ -23,6 +25,7 @@ export const filmProjects: PortfolioProject[] = [
     title: "Alien Covenant",
     category: "Film",
     role: "Generaliste",
+    thumbnail: new URL("../assets/images/film/alien-covenant/alien-covenant-01-50.jpg", import.meta.url).href,
     images: [
       new URL("../assets/images/film/alien-covenant/alien-covenant-01.jpg", import.meta.url).href,
       new URL("../assets/images/film/alien-covenant/alien-covenant-02.jpg", import.meta.url).href
@@ -34,6 +37,7 @@ export const filmProjects: PortfolioProject[] = [
     title: "Bloodshot",
     category: "Film",
     role: "Generaliste",
+    thumbnail: new URL("../assets/images/film/bloodshot/bloodshot-01-50.jpg", import.meta.url).href,
     images: [
       new URL("../assets/images/film/bloodshot/bloodshot-01.jpg", import.meta.url).href
     ],
@@ -44,6 +48,7 @@ export const filmProjects: PortfolioProject[] = [
     title: "Cloverfield Paradox",
     category: "Film",
     role: "Generaliste",
+    thumbnail: new URL("../assets/images/film/cloverfield-paradox/cloverfield-paradox-01-50.jpg", import.meta.url).href,
     images: [
       new URL("../assets/images/film/cloverfield-paradox/cloverfield-paradox-01.jpg", import.meta.url).href
     ],
@@ -54,6 +59,7 @@ export const filmProjects: PortfolioProject[] = [
     title: "Deadpool",
     category: "Film",
     role: "Generaliste",
+    thumbnail: new URL("../assets/images/film/deadpool/deadpool-01-50.jpg", import.meta.url).href,
     images: [
       new URL("../assets/images/film/deadpool/deadpool-01.jpg", import.meta.url).href,
       new URL("../assets/images/film/deadpool/deadpool-02.jpg", import.meta.url).href
@@ -87,6 +93,7 @@ export const filmProjects: PortfolioProject[] = [
     title: "Pachinko",
     category: "Film",
     role: "Generaliste",
+    thumbnail: new URL("../assets/images/film/pachinko/pachinko-01-50.jpg", import.meta.url).href,
     images: [
       new URL("../assets/images/film/pachinko/pachinko-01.jpg", import.meta.url).href,
       new URL("../assets/images/film/pachinko/pachinko-02.jpg", import.meta.url).href,
@@ -100,6 +107,7 @@ export const filmProjects: PortfolioProject[] = [
     title: "Pacific Rim 2",
     category: "Film",
     role: "Generaliste",
+    thumbnail: new URL("../assets/images/film/pacific-rim-2/pacific-rim-2-01-50.jpg", import.meta.url).href,
     images: [
       new URL("../assets/images/film/pacific-rim-2/pacific-rim-2-01.jpg", import.meta.url).href,
       new URL("../assets/images/film/pacific-rim-2/pacific-rim-2-02.jpg", import.meta.url).href,
@@ -113,6 +121,7 @@ export const filmProjects: PortfolioProject[] = [
     title: "Pirates of the Caribbeans 5",
     category: "Film",
     role: "Generaliste",
+    thumbnail: new URL("../assets/images/film/pirates-of-the-caribbeans-5/pirate-5-01-50.jpg", import.meta.url).href,
     images: [
       new URL("../assets/images/film/pirates-of-the-caribbeans-5/pirate-5-01.jpg", import.meta.url).href,
       new URL("../assets/images/film/pirates-of-the-caribbeans-5/pirate-5-02.jpg", import.meta.url).href,
@@ -125,6 +134,7 @@ export const filmProjects: PortfolioProject[] = [
     title: "Star Trek Beyond",
     category: "Film",
     role: "Generaliste",
+    thumbnail: new URL("../assets/images/film/star-trek-beyond/star-trek-beyond-01-50.jpg", import.meta.url).href,
     images: [
       new URL("../assets/images/film/star-trek-beyond/star-trek-beyond-01.jpg", import.meta.url).href
     ],
@@ -135,6 +145,7 @@ export const filmProjects: PortfolioProject[] = [
     title: "The Walk",
     category: "Film",
     role: "Generaliste",
+    thumbnail: new URL("../assets/images/film/the-walk/the-walk-01-50.jpg", import.meta.url).href,
     images: [
       new URL("../assets/images/film/the-walk/the-walk-01.jpg", import.meta.url).href
     ],
