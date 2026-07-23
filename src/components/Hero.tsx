@@ -101,7 +101,9 @@ function Hero() {
               height="512"
               decoding="async"
             />
-            <h1>ALTERATION</h1>
+            <h1>
+              <span className="hero-title-word">ALTERATION</span>
+            </h1>
           </div>
           <p className="hero-subtitle">From film and games to software development.</p>
           <p className="hero-copy">

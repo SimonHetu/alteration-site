@@ -295,6 +295,8 @@ h3 {
 }
 
 h1 {
+  position: relative;
+  display: inline-block;
   max-width: 720px;
   margin: 0;
   background: linear-gradient(92deg, #ffffff 0%, var(--premium-light)55%, var(--aqua));
@@ -302,6 +304,27 @@ h1 {
   font-size: 84px;
   text-shadow: rgba(34, 211, 238, 0.13) 0 0 28px;
   -webkit-text-fill-color: transparent;
+}
+
+.hero-title-word {
+  display: inline-block;
+  position: relative;
+}
+
+.hero-title-word::after {
+  position: absolute;
+  left: calc(100% + 0.12em);
+  top: 1.3em;
+  background: none;
+  color: var(--highlight);
+  content: "TM";
+  font-size: 0.16em;
+  font-weight: 700;
+  line-height: 1;
+  text-shadow:
+    rgba(34, 211, 238, 0.36) 0 0 8px,
+    rgba(139, 92, 246, 0.22) 0 0 14px;
+  -webkit-text-fill-color: currentColor;
 }
 
 h2 {
