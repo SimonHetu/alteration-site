@@ -299,27 +299,27 @@ h1 {
   display: inline-block;
   max-width: 720px;
   margin: 0;
-  background: linear-gradient(92deg, #ffffff 0%, var(--premium-light)55%, var(--aqua));
-  background-clip: text;
   font-size: 84px;
   text-shadow: rgba(34, 211, 238, 0.13) 0 0 28px;
-  -webkit-text-fill-color: transparent;
 }
 
 .hero-title-word {
   display: inline-block;
   position: relative;
+  background: linear-gradient(92deg, #ffffff 0%, var(--premium-light)55%, var(--aqua));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .hero-title-word::after {
   position: absolute;
   left: calc(100% + 0.12em);
-  top: 1.3em;
+  top: 0.8em;
   background: none;
   color: var(--highlight);
-  content: "TM";
-  font-size: 0.16em;
-  font-weight: 700;
+  content: "®";
+  font-size: 0.25em;
+  font-weight: 500;
   line-height: 1;
   text-shadow:
     rgba(34, 211, 238, 0.36) 0 0 8px,
@@ -470,7 +470,7 @@ p {
 
 .hero-brand-panel {
   top: 22px;
-  right: 88px;
+  right: 145px;
   z-index: 4;
   display: grid;
   place-items: center;
@@ -1523,7 +1523,7 @@ button.content-card:hover,
   }
 
   h1 {
-    font-size: 52px;
+    font-size: clamp(40px, 12vw, 52px);
   }
 
   .hero-title-lockup {
@@ -1557,20 +1557,23 @@ button.content-card:hover,
   }
 
   .hero-showcase {
+    margin-top: -30px;
     min-height: 490px;
   }
 
   .hero-brand-panel {
-    top: 28px;
-    right: 58px;
+    top: 42px;
+    right: 28px;
+    z-index: 5;
     width: 84px;
     min-height: 40px;
     padding: 8px;
   }
 
   .hero-tech-panel {
-    top: 64px;
+    top: 24px;
     left: 0;
+    z-index: 4;
     gap: 8px;
     width: min(260px, 72vw);
     padding: 12px;
