@@ -5,8 +5,6 @@ type ProjectsProps = {
   onProjectSelect: (project: ProjectDetail) => void;
 };
 
-const visibleProjects = projects.filter((project) => project.title !== "TrackFlow");
-
 function Projects({ onProjectSelect }: ProjectsProps) {
   return (
     <section className="portfolio-section" id="development-projects">
@@ -14,7 +12,7 @@ function Projects({ onProjectSelect }: ProjectsProps) {
         <h2>Development Projects</h2>
 
         <div className="content-grid development-grid">
-          {visibleProjects.map((project) => {
+          {projects.map((project) => {
             const coverImage = project.thumbnail ?? project.images?.[0];
 
             if (coverImage) {

@@ -69,5 +69,29 @@ export const projects = [
       new URL("../assets/images/development/trackflow/trackflow-08.jpg", import.meta.url).href,
     ],
     description: "Project management platform designed to organize workflows, track progress and keep team activity easy to scan. TrackFlow brings together task planning, status visibility and a clean responsive interface for day-to-day production."
+  },
+  {
+    title: "h2origin",
+    category: "Event Website",
+    role: "Web Development",
+    tools: ["Live event website", "Responsive UI", "Event presentation"],
+    images: [
+      new URL("../assets/images/development/h2origin/h2origin-01.jpg", import.meta.url).href,
+      new URL("../assets/images/development/h2origin/h2origin-02.jpg", import.meta.url).href,
+      new URL("../assets/images/development/h2origin/h2origin-03.jpg", import.meta.url).href,
+      new URL("../assets/images/development/h2origin/h2origin-04.jpg", import.meta.url).href,
+      new URL("../assets/images/development/h2origin/h2origin-05.jpg", import.meta.url).href,
+    ],
+    description: "Website created for a live event, focused on presenting the event experience clearly with a polished responsive interface and direct access to key information."
+  },
+  {
+    title: "moomoo",
+    category: "Application Development",
+    role: "Python Development",
+    tools: ["Python", "Media browsing", "Customizable interface"],
+    images: [
+      new URL("../assets/images/development/moomoo/moomoo-01.jpg", import.meta.url).href,
+    ],
+    description: "Customizable Python application for browsing and viewing multimedia content. moomoo focuses on flexible media presentation, configurable workflows and a lightweight desktop experience."
   }
 ];
