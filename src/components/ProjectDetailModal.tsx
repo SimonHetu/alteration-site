@@ -11,6 +11,9 @@ export type ProjectDetail = {
     url: string;
   };
   description: string;
+  summary?: string;
+  technicalWork?: string[];
+  stack?: string[];
   thumbnail?: string;
   image?: string;
   images?: string[];
@@ -176,6 +179,8 @@ function ProjectDetailModal({ project, onClose }: ProjectDetailModalProps) {
     { label: "Category", value: project.category ?? "Portfolio work" },
     { label: "Year", value: project.year ?? "Selected work" },
   ];
+  const hasTechnicalDetails =
+    Boolean(project.technicalWork?.length) || Boolean(project.stack?.length);
 
   return (
     <div className="modal-overlay" onClick={closeProject}>
@@ -214,6 +219,28 @@ function ProjectDetailModal({ project, onClose }: ProjectDetailModalProps) {
               </div>
             ))}
           </dl>
+
+          {hasTechnicalDetails && (
+            <section className="project-technical">
+              {project.technicalWork && project.technicalWork.length > 0 && (
+                <div>
+                  <h3>Technical Work</h3>
+                  <ul>
+                    {project.technicalWork.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {project.stack && project.stack.length > 0 && (
+                <div>
+                  <h3>Stack</h3>
+                  <p>{project.stack.join(" · ")}</p>
+                </div>
+              )}
+            </section>
+          )}
 
           {images.length === 1 && (
             <button

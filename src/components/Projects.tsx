@@ -35,7 +35,9 @@ function Projects({ onProjectSelect }: ProjectsProps) {
                     <div className="portfolio-card-content">
                       <h3>{project.title}</h3>
                       <p className="portfolio-role">{project.category}</p>
-                      <p className="portfolio-description">{project.description}</p>
+                      <p className="portfolio-description">
+                        {project.summary ?? project.description}
+                      </p>
                     </div>
                   </button>
                   {project.website && (
@@ -61,7 +63,9 @@ function Projects({ onProjectSelect }: ProjectsProps) {
               >
                 <h3>{project.title}</h3>
                 <p className="portfolio-role">{project.category}</p>
-                <p className="portfolio-description">{project.description}</p>
+                <p className="portfolio-description">
+                  {project.summary ?? project.description}
+                </p>
               </button>
             );
           })}

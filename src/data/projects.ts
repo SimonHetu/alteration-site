@@ -16,6 +16,13 @@ export const projects = [
       new URL("../assets/images/development/empire-media/empire-media-06.jpg", import.meta.url).href,
       new URL("../assets/images/development/empire-media/empire-media-07.jpg", import.meta.url).href,
     ],
+    summary: "Streaming platform work focused on frontend implementation, feature delivery and Git-based collaboration.",
+    technicalWork: [
+      "Contributed frontend features within an existing production codebase.",
+      "Implemented responsive UI updates and client-facing interface refinements.",
+      "Worked through Git-based collaboration, code analysis and iterative delivery.",
+    ],
+    stack: ["React", "Firebase", "Azure", "Git"],
     description: "Streaming platform developed within a collaborative team environment. Contributions include frontend development, feature implementation, code analysis and Git-based workflows."
   },
   {
@@ -36,6 +43,13 @@ export const projects = [
       new URL("../assets/images/development/kernel-coffee/kernel-coffee-05.jpg", import.meta.url).href,
       new URL("../assets/images/development/kernel-coffee/kernel-coffee-06.jpg", import.meta.url).href,
     ],
+    summary: "Themed coffee e-commerce experience with a responsive storefront, product catalog and developer-focused branding.",
+    technicalWork: [
+      "Built a responsive e-commerce interface around a themed product catalog.",
+      "Structured product presentation, browsing flows and storefront content.",
+      "Focused on clear shopping interactions and playful developer-oriented branding.",
+    ],
+    stack: ["Next.js", "React", "TypeScript", "Three.js", "Stripe", "Vercel"],
     description: "Coffee e-commerce platform built around programming-language-inspired blends such as Go Brew and Ruby Roast. The experience combines a themed product catalog, responsive shopping interface and playful developer-focused branding."
   },
   {
@@ -51,6 +65,13 @@ export const projects = [
     images: [
       new URL("../assets/images/development/crime-vision/crime-vision-01.jpg", import.meta.url).href,
     ],
+    summary: "Interactive Montreal incident map combining geospatial exploration, filters and readable data visualization.",
+    technicalWork: [
+      "Built an interactive map interface for exploring incident data across Montreal.",
+      "Designed filtering and scanning patterns for dense geospatial information.",
+      "Structured the frontend around clear data presentation and responsive layouts.",
+    ],
+    stack: ["React", "TypeScript", "Map API", "Vercel"],
     description: "Interactive platform for visualizing criminal incidents across Montreal on a map. Crime Vision combines geospatial data, location-based exploration and clear data visualization to make incident patterns easier to understand."
   },
   {
@@ -68,13 +89,25 @@ export const projects = [
       new URL("../assets/images/development/trackflow/trackflow-07.jpg", import.meta.url).href,
       new URL("../assets/images/development/trackflow/trackflow-08.jpg", import.meta.url).href,
     ],
+    summary: "Project tracking dashboard for organizing workflows, monitoring progress and scanning team activity.",
+    technicalWork: [
+      "Developed dashboard-style views for tracking projects, workflow status and team activity.",
+      "Organized operational data into scan-friendly cards, tables and panels.",
+      "Focused on reusable UI patterns for repeated management tasks.",
+    ],
+    stack: ["React", "TypeScript", "ZXing", "Git"],
     description: "Project management platform designed to organize workflows, track progress and keep team activity easy to scan. TrackFlow brings together task planning, status visibility and a clean responsive interface for day-to-day production."
   },
   {
-    title: "h2origin",
+    title: "H2Origin",
     category: "Event Website",
     role: "Web Development",
     tools: ["Live event website", "Responsive UI", "Event presentation"],
+    thumbnail: new URL("../assets/images/development/h2origin/h2origin-01-50.jpg", import.meta.url).href,
+    website: {
+      label: "h2origin.ca",
+      url: "https://h2origin.ca/",
+    },
     images: [
       new URL("../assets/images/development/h2origin/h2origin-01.jpg", import.meta.url).href,
       new URL("../assets/images/development/h2origin/h2origin-02.jpg", import.meta.url).href,
@@ -82,16 +115,31 @@ export const projects = [
       new URL("../assets/images/development/h2origin/h2origin-04.jpg", import.meta.url).href,
       new URL("../assets/images/development/h2origin/h2origin-05.jpg", import.meta.url).href,
     ],
+    summary: "Live event website built to present the experience, schedule and key event details clearly.",
+    technicalWork: [
+      "Built a polished event website for presenting live event information.",
+      "Created responsive page sections for event branding, visitor actions and key details.",
+      "Focused on visual impact, clear navigation and fast access to event information.",
+    ],
+    stack: ["React", "JavaScript", "CSS", "Live deployment"],
     description: "Website created for a live event, focused on presenting the event experience clearly with a polished responsive interface and direct access to key information."
   },
   {
-    title: "moomoo",
+    title: "Moomoo",
     category: "Application Development",
     role: "Python Development",
     tools: ["Python", "Media browsing", "Customizable interface"],
+    thumbnail: new URL("../assets/images/development/moomoo/moomoo-01-50.jpg", import.meta.url).href,
     images: [
       new URL("../assets/images/development/moomoo/moomoo-01.jpg", import.meta.url).href,
     ],
-    description: "Customizable Python application for browsing and viewing multimedia content. moomoo focuses on flexible media presentation, configurable workflows and a lightweight desktop experience."
+    summary: "Customizable Python media browser for viewing multimedia content through a lightweight desktop interface.",
+    technicalWork: [
+      "Built a Python application for browsing and viewing multimedia content.",
+      "Designed a customizable interface for organizing and navigating media libraries.",
+      "Focused on lightweight desktop workflows and flexible content presentation.",
+    ],
+    stack: ["Python", "PySide", "Qt", "VLC libraries"],
+    description: "Customizable Python application for browsing and viewing multimedia content. Moomoo focuses on flexible media presentation, configurable workflows and a lightweight desktop experience."
   }
 ];
